@@ -34,25 +34,30 @@ During the SOW meeting, our customer voiced these requests:
 >
 > Nobody likes to study in a rainy day.
 
-In response to our client's request, we made a simple wireframe that we need you to recreate. The wireframe images can be found in the `./graphics` folder with the name of the required screen and width, like `search-1200`.
+In response to our client's request, we made a simple wireframe that we need you to recreate. The wireframe images can be found in the `./graphics` folder with the name of the required screen and width, like `search`.
 
 Since this is only wireframe, feel free to use any ui lib or style you like.
 
+Do note that responsiveness has to perform correctly. We wont be evaluating design quality, but responsiveness-related-code quality.
+
 ## The task
 
-Create a simple web app consisting of four screens:
+Using react and the apis referenced in the resources section, create a simple web app consisting of four screens:
 
-1. A login/register screen
-1. A universities search with results
-1. The user profile with a list of the user's saved universities
-1. A compare screen for the universities data
+1. Login: A login/register screen
+1. Search: A universities search screen, with results
+1. Profile-compare: The user profile with a list of the user's saved universities and a compare panel to show the selected universities countries data
 
 Aside from the screens, the app has to comply with the following specs:
 
 - Search values have to be autocompleted with the correct (or close-to-correct) university name.
 - A menu to go to the search page, logout and the user profie.
-- User data must include at least name, email and password
-  > Use Json-server for this. Do not worry about hashing or security as this is only a basic local db.
+- User data must include at least email, password and a universities list.
+  > Use Json-server for this. Do not worry about hashing or security as this is only a basic local db. We just want to see how you handle the data.
+
+Personal user data (like the email) may or not be shown depending on your preference.
+
+Finally, if any design element does not comply with best practices, we expect you to take care of fixing it.
 
 ## What we'll be looking at
 
@@ -66,7 +71,8 @@ Aside from the screens, the app has to comply with the following specs:
 - UI-Logic detachment
 - Error handling
 - Design responsiveness
-- Working in accordance with industry best practices
+- Coding in accordance with industry best practices
+- UX patterns
 
 ## Resources
 
