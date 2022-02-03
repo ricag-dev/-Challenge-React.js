@@ -1,0 +1,17 @@
+{
+  "name": "challenge-react",
+  "version": "1.0.0",
+  "description": "Condor's React.js assessment challenge",
+  "main": "index.js",
+  "scripts": {
+    "app": "npm start -w web",
+    "server": "npm start -w server"
+  },
+  "repository": "git@condor:rgCondor/Challenge-React.js.git",
+  "author": "Rafael González",
+  "license": "MIT",
+  "workspaces": [
+    "server",
+    "web"
+  ]
+}
