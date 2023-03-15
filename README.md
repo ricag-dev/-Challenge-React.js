@@ -7,7 +7,7 @@ Please fork the repo to start. Once finished, issue a pull request to our repo s
 This challenge requires:
 
 - NodeJS (> v14.7.0)
-- NPM or Yarn
+- NPM or Yarn (if using Yarn, you'll need to edit the scripts on the root's package.json)
 - A cup of ☕ or 🍵
 
 The repo is pre-configured, so just by running `npm i` or `yarn`, should be able to install these basic packages:
@@ -21,11 +21,11 @@ In the main `package.json` you'll have access to the following scripts:
 - `npm run app`: To run the react app.
 - `npm run server`: To start the local db.
 
-You may use any other package of your choice to enrich your development experience.
+You may use any other package of your choice to enrich your development experience, but what's already installed is mandatory to use.
 
 ## The challenge
 
-> _Tasks are not ordered or weighted! Before coding, read all rhe items carefully and prioritize as you consider._
+> _Tasks are not ordered or weighted! Before coding, read all the items carefully and prioritize as you see fit._
 
 During the SOW meeting, our customer voiced these requests:
 
@@ -35,7 +35,7 @@ During the SOW meeting, our customer voiced these requests:
 >
 > Nobody likes to study on a rainy day.
 
-In response to our client's request, we made a simple Figma mockup that we need you to recreate. The images can be found in the `./graphics` folder with the name of the required screen and width, like `search`. Additionally, you may use the [basic prototype](https://www.figma.com/proto/K54hpF6ajDqzPHCQJ9xK8T/Untitled?page-id=0%3A1&node-id=3%3A694&viewport=241%2C48%2C0.25&scaling=scale-down&starting-point-node-id=3%3A694) for reference. 
+In response to our client's request, we made a simple Figma mockup that we need you to recreate. The images can be found in the `./graphics` folder with the name of the required screen and width, like `search`. Additionally, you may use the [basic prototype](https://www.figma.com/proto/K54hpF6ajDqzPHCQJ9xK8T/Untitled?page-id=0%3A1&node-id=3%3A694&viewport=241%2C48%2C0.25&scaling=scale-down&starting-point-node-id=3%3A694) for reference.
 
 Since this is the only wireframe, feel free to use any ui lib or style you like.
 
@@ -75,11 +75,9 @@ Personal user data (like the email) may or may not be shown depending on your pr
 
 ## Submission Guidelines
 
-Please fork the repo to start. 
-
 Feel free to add or replace any package. The only one that is mandatory, is React.js.
 
-Once finished, issue a pull request to our repo so we can review your solution.
+Once finished, issue a pull request to our repo's branch "submissions/your-name-and-lastname" so we can review your solution. If the branch is not already created, please notify us and we'll create one for you.
 
 ## Resources
 
