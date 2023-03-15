@@ -70,7 +70,7 @@ Personal user data (like the email) may or may not be shown depending on your pr
 - UI-Logic detachment
 - Error handling
 - Design responsiveness
-- Coding following the industry best practices
+- Coding in accordance with industry best practices
 - UX patterns
 
 ## Submission Guidelines
