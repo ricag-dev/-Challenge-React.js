@@ -3,9 +3,14 @@
   "version": "1.0.0",
   "description": "Condor's React.js assessment challenge",
   "main": "index.js",
+  "engines": {
+    "node": ">=16"
+  },
   "scripts": {
     "app": "npm start -w web",
-    "server": "npm start -w server"
+    "server": "npm start -w server",
+    "clean": "npx rimraf node_modules .parcel-cache web/dist web/.parcel-cache",
+    "reset": "npm run clean && npm i"
   },
   "repository": "git@condor:rgCondor/Challenge-React.js.git",
   "author": "Rafael González",
