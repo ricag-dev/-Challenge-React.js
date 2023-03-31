@@ -1,17 +1,27 @@
 import "primereact/resources/themes/lara-light-indigo/theme.css";
 import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
+import "primeflex/primeflex.css";
 import './styles.css'
-import { Button } from 'primereact/button';
+
+import { RouterProvider } from "react-router-dom";
+import AppHeader from "./core/components/layout/AppHeader";
+import { Panel } from 'primereact/panel';
+import router from './router';
+
 
 
 export function App() {
 	return (
-		<div className="app">
-			<h1>Hello world!</h1>
-			<div className="card flex justify-content-center">
-				<Button label="Check" icon="pi pi-check" />
-			</div>
+		<div className="min-h-screen">
+			<AppHeader/>
+			<Panel className="">
+				<RouterProvider router={router} />
+			</Panel>
 		</div>
 )
 }
+
+
+
+// <router-view  @isAuthenticated="onAuthenticationStatusChanged"/>

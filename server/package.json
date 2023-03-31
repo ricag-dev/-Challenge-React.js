@@ -6,7 +6,7 @@
     "node": ">=16"
   },
   "scripts": {
-    "start": "json-server --watch db.json"
+    "start": "json-server --watch db.json --port 3004"
   },
   "repository": "git@condor:rgCondor/Challenge-React.js.git",
   "author": "Rafael González",
