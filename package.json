@@ -18,5 +18,13 @@
   "workspaces": [
     "server",
     "web"
-  ]
+  ],
+  "dependencies": {
+    "primeicons": "^6.0.1",
+    "primereact": "^9.2.2"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.7",
+    "process": "^0.11.10"
+  }
 }
