@@ -1,5 +1,5 @@
 html,body{
-    background: #E5E5E5;
+    background: #F7F9FC;
     margin: 0
 }
 .p-menubar ul.p-menubar-root-list {
@@ -13,8 +13,9 @@ html,body{
 
 .p-panel .p-panel-content{
     background: none;
+    border: none
 }
 
-.p-progress-spinner{
+.p-progress-spinner, .p-inputtext{
     width: 100%
 }

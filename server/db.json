@@ -3,6 +3,44 @@
     {
       "email": "kharman123@gmail.com",
       "pass": "adminadmin",
+      "universities": [
+        {
+          "state-province": null,
+          "web_pages": [
+            "http://www.ntnu.edu.ng/"
+          ],
+          "country": "Nigeria",
+          "name": "Nigerian Turkish Nile University",
+          "alpha_two_code": "NG",
+          "domains": [
+            "ntnu.edu.ng"
+          ]
+        },
+        {
+          "state-province": null,
+          "web_pages": [
+            "http://www.uwimona.edu.jm/"
+          ],
+          "country": "Jamaica",
+          "name": "University of the West Indies, Mona",
+          "alpha_two_code": "JM",
+          "domains": [
+            "uwimona.edu.jm"
+          ]
+        },
+        {
+          "state-province": null,
+          "web_pages": [
+            "http://www.uwichill.edu.bb/"
+          ],
+          "country": "Barbados",
+          "name": "University of the West Indies, Cave Hill",
+          "alpha_two_code": "BB",
+          "domains": [
+            "uwichill.edu.bb"
+          ]
+        }
+      ],
       "id": 1
     }
   ]
