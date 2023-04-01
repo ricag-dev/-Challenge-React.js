@@ -5,16 +5,13 @@ import "primeflex/primeflex.css";
 import './styles.css'
 
 import { RouterProvider } from "react-router-dom";
-import AppHeader from "./core/components/layout/AppHeader";
 import { Panel } from 'primereact/panel';
 import router from './router';
-
 
 
 export function App() {
 	return (
 		<div className="min-h-screen">
-			<AppHeader/>
 			<Panel className="">
 				<RouterProvider router={router} />
 			</Panel>

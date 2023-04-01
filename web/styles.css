@@ -14,3 +14,7 @@ html,body{
 .p-panel .p-panel-content{
     background: none;
 }
+
+.p-progress-spinner{
+    width: 100%
+}
