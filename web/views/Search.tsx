@@ -9,9 +9,10 @@ import { Card } from 'primereact/card';
 import UniversityService from '../services/UniversityService';
 import UserService from '../services/UserService';
 import { Toast } from 'primereact/toast';
+import CardUniversity from '../components/CardUniversity';
 
 const Search = () => {
-	const toast = useRef(null)
+	const toast = useRef(null);
 	const [login, _] = useLogin();
 	const navigate = useNavigate();
 	if (!login) {
@@ -37,11 +38,24 @@ const Search = () => {
 		);
 	};
 
-	const addUniversity = (item)=>{
-		UserService.addUniversity(item, login.id).then((data)=>{
-			toast.current.show({ severity: 'success', summary: 'University added', detail: `University applied: ${item.name}`, life: 3000 })
-		})
-	}
+	const addUniversity = (item) => {
+		UserService.addUniversity(item, login.id).then((data) => {
+			toast.current.show({
+				severity: 'success',
+				summary: 'University added',
+				detail: `University applied: ${item.name}`,
+				life: 3000,
+			});
+		});
+	};
+
+	const setAutocomplete = (e) => {
+		setValue(e.value);
+		if (typeof e.value == 'object') {
+			setValue('');
+			setSelected([e.value]);
+		}
+	};
 
 	return (
 		<>
@@ -51,36 +65,24 @@ const Search = () => {
 				<Panel className='w-full md:w-8 justify-content-center'>
 					<div className='grid'>
 						<div className='col-10'>
-							<AutoComplete className='w-full' value={value} suggestions={items} completeMethod={search}
-														onChange={(e) => {
-															setValue(e.value);
-															if(typeof e.value =='object'){
-																setValue('');
-																console.log(e)
-																setSelected([e.value]);
-															}
-														}} itemTemplate={itemTemplate} />
+							<AutoComplete
+								className='w-full'
+								value={value}
+								suggestions={items}
+								completeMethod={search}
+								onChange={(e) => setAutocomplete(e)}
+								itemTemplate={itemTemplate} />
 						</div>
 						<div className='col-2'>
 							<Button icon='pi pi-search' className='w-full' />
 						</div>
 					</div>
 					<div className='my-5'>
-						{ selected.map((item)=> (
-							<Card header={(
-								<div className="grid p-4 pb-0 align-items-center">
-									<div className="p-card-title col mb-0">{item.country}</div>
-									<div className="col text-right">
-										<Button icon="pi pi-star" rounded text aria-label="star" severity="secondary" onClick={()=> addUniversity(item)} />
-										<Button onClick={()=> {
-											window.open(item.web_pages[0], '_blank');
-										}} icon="pi pi-external-link" rounded text aria-label="Link" severity="secondary" />
-									</div>
-								</div>
-							)}>
-								<p className="m-0">{item.name}</p>
-							</Card>
-						)) }
+						{selected.map((item, key) => (
+							<CardUniversity item={item} key={key} starPress={() => {
+								addUniversity(item);
+							}} />
+						))}
 					</div>
 				</Panel>
 			</div>
