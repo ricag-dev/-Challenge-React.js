@@ -41,6 +41,9 @@ const Login = (props) => {
 			UserService.register(input).then(({ data }) => {
 				setLoad(false);
 				setLogin(data);
+			}).catch(e=>{
+				toast.current.show({ severity: 'error', summary: 'Error', detail: 'User is registred!', life: 3000 })
+				setLoad(false);
 			});
 		} else {
 			UserService.login(input).then(({ data }) => {
